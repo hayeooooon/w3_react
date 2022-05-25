@@ -7,10 +7,10 @@ import { Route, Link, Switch } from "react-router-dom";
 
 function App() {
 	// 요일 배열 만들기
-	const days = ["월", "화", "수", "목", "금", "토", "일"];
-	const days_en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+	const days = ["일", "월", "화", "수", "목", "금", "토"];
+	const days_en = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
 	const date = new Date().getDay(); // 오늘 요일
-	let today = date - 1; // index - 1
+	let today = date;
 	const dateFromToday = days.map((v, i) => {
 		// 오늘 요일 기준으로 배열 새로 생성
 		let result = today;
@@ -22,6 +22,8 @@ function App() {
 		today += 1;
 		return result;
 	});
+
+	console.log(dateFromToday)
 
 	return (
 		<div className="App">
