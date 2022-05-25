@@ -15,6 +15,8 @@ const Detail = (props) => {
 	const keyupEvent = (e) => { // keyup 이벤트 추가 (숫자로 평점 입력)
 		if (0 < e.key && e.key <= 5) {
 			setScore(e.key - 1);
+		}else{
+			alert('평점 입력은 1에서 5사이의 숫자키만 이용해서 입력 가능합니다.');
 		}
 	};
 
