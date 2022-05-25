@@ -20,7 +20,6 @@ const Main = (props) => {
 		random_stars.reduce((cur, acc) => (cur += acc)) / 7
 	).toFixed(2);
 	const [average, updateAverage] = React.useState(getAverage);
-	const average_score = React.useRef();
 
 	return (
 		<div className="page_main">
@@ -58,7 +57,7 @@ const Main = (props) => {
 			</DaysGroup>
 			<Average>
 				<p>
-					평균 <span ref={average_score}>{average}</span>
+					평균 <span>{average}</span>
 				</p>
 				<button
 					onClick={() => {
