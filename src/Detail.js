@@ -56,7 +56,7 @@ const Detail = (props) => {
 								setScore(i);
 							}}
 						>
-							<img src={i <= score ? StarActive : StarDefault} />
+							<img src={i <= score ? StarActive : StarDefault} alt="star"/>
 						</button>
 					);
 				})}

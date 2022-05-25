@@ -3,7 +3,7 @@ import Detail from "./Detail";
 import Main from "./Main";
 import React from "react";
 import styled from "styled-components";
-import { Route, Link, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
 	// 요일 배열 만들기
@@ -22,8 +22,6 @@ function App() {
 		today += 1;
 		return result;
 	});
-
-	console.log(dateFromToday)
 
 	return (
 		<div className="App">

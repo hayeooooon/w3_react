@@ -30,7 +30,7 @@ const Main = (props) => {
 					return (
 						<li key={i} className="day_item">
 							<span className="day">
-								{props.days[v]}{" "}
+								{props.days[v]}
 								<em style={{ fontSize: "0" }}>{random_stars[i]}</em>
 							</span>
 							<ScoreArea>
@@ -44,6 +44,7 @@ const Main = (props) => {
 															? StarActive
 															: StarDefault
 													}
+													alt="star"
 												/>
 											</li>
 										);
